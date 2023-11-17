@@ -32,11 +32,10 @@ body {
 }
 
 .heroHeader {
-    border: red solid 1px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 3em;
+    padding: 2em 3em;
 }
 
 .headerLeftSide a {
@@ -53,13 +52,10 @@ body {
     font-family: "poppins", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 500;
-    gap: 2em;
+    gap: 3em;
 
     & a {
         color: var(--color-white);
-    }
-
-    & li {
         text-decoration-line: none;
     }
 }
