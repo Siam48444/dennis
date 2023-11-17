@@ -57,5 +57,24 @@ body {
     & a {
         color: var(--color-white);
         text-decoration-line: none;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0.5em;
+            height: 0.5em;
+            background-color: var(--color-white);
+            border-radius: 50%;
+            inset: auto 55% -1.2em 45%;
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 200ms, transform 200ms;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
