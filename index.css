@@ -24,7 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: auto;
-    background-image: url("/Images/Dennis.jpg");
+    background-image: url(/Images/Dennis.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -39,12 +39,47 @@ body {
     padding: 2em 3em;
 }
 
-.headerLeftSide a {
-    color: var(--color-white);
-    text-decoration-line: none;
+.headerLeftSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
     font-family: "poppins", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     font-weight: 500;
+    text-decoration: none;
+    
+    & p { 
+        color: var(--color-white);
+        text-decoration-line: none;
+        text-wrap: nowrap;
+    }
+
+    &:hover .codeByDennis {
+        transform: translateX(-45%);
+    }
+
+    &:hover .codeByDennisContainer {
+        width: 10em;
+    }
+
+    &:hover .copyrightSign {
+        transform: rotate(360deg);
+    }
+}
+
+.copyrightSign {
+    transition: transform 300ms ease;
+}
+
+.codeByDennisContainer {
+    width: 8.1em;
+    overflow: hidden;
+    transition: width 300ms ease;
+}
+
+.codeByDennis {
+    transition: transform 300ms ease;
 }
 
 .headerRightSide ul {
@@ -70,7 +105,7 @@ body {
             inset: auto 55% -1.2em 45%;
             opacity: 0;
             transform: scale(0);
-            transition: opacity 200ms, transform 200ms;
+            transition: opacity 300ms ease, transform 300ms ease;
         }
 
         &:hover::after {
@@ -83,20 +118,30 @@ body {
 .heroMainName {
     color: var(--color-white);
     font-family: "poppins", Arial, Helvetica, sans-serif;
-    font-weight: 100;
     font-size: 5rem;
     text-wrap: nowrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 70%;
+    top: 60%;
+    gap: 0.5em;
+}
+
+.heroNameAnimationSlide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 0.5em;
     animation: mainNameAnimation 10000ms linear infinite;
 }
 
+.heroAnimatedName {
+    font-weight: 300;
+}
+
 @keyframes mainNameAnimation {
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100vw);
     }
 }
