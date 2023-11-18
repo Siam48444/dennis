@@ -338,7 +338,7 @@ body {
     position: fixed;
     inset: 0 0 0 auto;
     height: 100vh;
-    width: 40vw;
+    width: 30em;
     background-color: var(--color-black);
     padding: 6em;
     color: var(--color-white);
@@ -359,5 +359,46 @@ body {
     & p {
         font-size: 0.7rem;
         opacity: 0.5;
+    }
+}
+
+.navBorderBottom {
+    background-color: var(--color-white);
+    width: 150%;
+    height: 0.00625em;
+    opacity: 0.2;
+    margin-bottom: 3em;
+}
+
+.navigations ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.1em;
+
+    & li {
+        list-style: none;
+    }
+
+    & a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+}
+
+.socialList {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5em;
+
+    & a {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--color-white);
+        text-decoration: none;
     }
 }
