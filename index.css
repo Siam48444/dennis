@@ -349,6 +349,8 @@ body {
     align-items: baseline;
     justify-content: space-between;
     box-shadow: var(--color-menu-box-shadow);
+    opacity: 0;
+    transform: translateX(100%);
 }
 
 .navigations, .socials {
@@ -442,4 +444,28 @@ body {
             transform: scale(1);
         }
     }
+}
+
+.hamburgerMenuButton {
+    background-color: var(--color-black);
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3em;
+    cursor: pointer;
+
+}
+
+.hamburgerButtonLines {
+    width: 30%;
+    height: 0.1em;
+    background-color: var(--color-white);
+    border-radius: 99em;
 }
