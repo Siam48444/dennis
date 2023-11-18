@@ -75,17 +75,17 @@ body {
 }
 
 .copyrightSign {
-    transition: transform 300ms ease;
+    transition: transform 300ms ease-in-out;
 }
 
 .codeByDennisContainer {
     width: 8.1em;
     overflow: hidden;
-    transition: width 300ms ease;
+    transition: width 300ms ease-in-out;
 }
 
 .codeByDennis {
-    transition: transform 300ms ease;
+    transition: transform 300ms ease-in-out;
 }
 
 .headerRightSide ul {
@@ -111,7 +111,7 @@ body {
             inset: auto 55% -1.5em 45%;
             opacity: 0;
             transform: scale(0);
-            transition: opacity 300ms ease, transform 300ms ease;
+            transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
         }
 
         &:hover::after {
@@ -183,7 +183,7 @@ body {
     fill: var(--color-white);
     width: 2em;
     transform: rotate(-135deg);
-    transition: transform 300ms ease;
+    transition: transform 300ms ease-in-out;
 }
 
 .heroLocatioContainer {
@@ -264,7 +264,7 @@ body {
 }
 
 .recentWorkNames {
-    transition: padding-inline 300ms ease, color 300ms ease;
+    transition: padding-inline 300ms ease-in-out, color 300ms ease-in-out;
 
     &:hover {
         padding-inline: 1em;
@@ -310,7 +310,7 @@ body {
 }
 
 .hoverBlue {
-    transition: background-color 300ms ease, color 300ms ease;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 
     &:hover {
         background-color: var(--color-blue);
