@@ -20,6 +20,7 @@ body {
     --color-white: rgba(255, 255, 255, 1);
     --color-black: rgba(28, 29, 32, 1);
     --color-light-black: rgba(153, 157, 158, 0.4);
+    --color-blue: rgba(69, 92, 233, 1);
 
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
@@ -272,7 +273,7 @@ body {
 }
 
 .recentWorkTitle p {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     opacity: 0.5;
 }
 
@@ -306,6 +307,11 @@ body {
     font-size: 1rem;
     font-weight: 500;
     text-decoration-line: none;
+    transition: background-color 300ms ease;
+
+    &:hover {
+        background-color: var(--color-blue);
+    }
 }
 
 .moreWroks {
