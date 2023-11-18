@@ -236,3 +236,22 @@ body {
         font-weight: 400;
     }
 }
+
+.recentWorkSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8em 12em;
+    max-width: 100em;
+    margin: auto;
+}
+
+.recentWorkTitle, .recentWorkNames {
+    border: solid red 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em 3em;
+}
