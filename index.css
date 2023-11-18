@@ -19,6 +19,7 @@ body {
     --color-hero-background: rgba(153,157,158, 1);
     --color-white: rgba(255, 255, 255, 1);
     --color-black: rgba(28, 29, 32, 1);
+    --color-light-black: rgba(153, 157, 158, 0.3);
 
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
@@ -245,13 +246,39 @@ body {
     padding: 8em 12em;
     max-width: 100em;
     margin: auto;
+    font-family: var(--Poppins);
+    color: var(--color-black);
 }
 
 .recentWorkTitle, .recentWorkNames {
-    border: solid red 2px;
+    /* border: solid red 1px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 2em 3em;
+    padding: 3em;
+    position: relative;
+    border-bottom: 0.0625em solid var(--color-light-black);
+}
+
+.recentWorkTitle p {
+    font-size: 0.65rem;
+    opacity: 0.5;
+}
+
+.aboutMe {
+    position: absolute;
+    right: 5em;
+    bottom: 5em;
+    background-color: var(--color-black);
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration-line: none;
 }
