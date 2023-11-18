@@ -262,6 +262,15 @@ body {
     border-bottom: 0.0625em solid var(--color-light-black);
 }
 
+.recentWorkNames {
+    transition: padding-inline 300ms ease, color 300ms ease;
+
+    &:hover {
+        padding-inline: 1em;
+        color: var(--color-hero-background);
+    }
+}
+
 .recentWorkTitle p {
     font-size: 0.65rem;
     opacity: 0.5;
