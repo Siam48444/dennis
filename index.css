@@ -21,6 +21,7 @@ body {
     --color-black: rgba(28, 29, 32, 1);
     --color-light-black: rgba(153, 157, 158, 0.4);
     --color-blue: rgba(69, 92, 233, 1);
+    --color-menu-box-shadow: -10em 0 100em rgba(10, 10, 10, 0.2);
 
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
@@ -347,7 +348,7 @@ body {
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
-    box-shadow: -10em 0 100em rgba(10, 10, 10, 0.2);
+    box-shadow: var(--color-menu-box-shadow);
 }
 
 .navigations, .socials {
