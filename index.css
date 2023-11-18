@@ -335,7 +335,7 @@ body {
 }
 
 .menuSection {
-    position: absolute;
+    position: fixed;
     inset: 0 0 0 auto;
     height: 100vh;
     width: 40vw;
@@ -347,4 +347,17 @@ body {
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
+}
+
+.navigations, .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 2em;
+
+    & p {
+        font-size: 0.7rem;
+        opacity: 0.5;
+    }
 }
