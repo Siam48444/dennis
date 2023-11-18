@@ -19,7 +19,7 @@ body {
     --color-hero-background: rgba(153,157,158, 1);
     --color-white: rgba(255, 255, 255, 1);
     --color-black: rgba(28, 29, 32, 1);
-    --color-light-black: rgba(153, 157, 158, 0.3);
+    --color-light-black: rgba(153, 157, 158, 0.4);
 
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
@@ -222,7 +222,7 @@ body {
     justify-content: space-between;
     align-items: top;
     gap: 3em;
-    padding: 8em 12em;
+    padding: 8em 10em;
     font-family: var(--Poppins);
 
     & h5 {
@@ -243,7 +243,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8em 12em;
+    padding: 8em 10em;
     max-width: 100em;
     margin: auto;
 }
@@ -267,6 +267,21 @@ body {
     opacity: 0.5;
 }
 
+.recentWorkNames p {
+    font-size: 0.9rem;
+}
+
+.recentWorkNames h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.tradeMark {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
 .aboutMe {
     position: absolute;
     right: 5em;
@@ -282,4 +297,20 @@ body {
     font-size: 1rem;
     font-weight: 500;
     text-decoration-line: none;
+}
+
+.moreWroks {
+    font-family: var(--Poppins);
+    font-size: 0.9rem;
+    color: var(--color-black);
+    margin-top: 4em;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 999em;
+    border: 0.0625em solid var(--color-light-black);
+
+    & sup {
+        opacity: 0.6;
+        margin-left: 0.3em;
+    }
 }
