@@ -379,6 +379,28 @@ body {
 
     & li {
         list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0.7em;
+            height: 0.7em;
+            background-color: var(--color-white);
+            border-radius: 50%;
+            left: -2.5em;
+            transform: scale(0);
+            opacity: 0;
+            transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+        }
+
+        &:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
     & a {
