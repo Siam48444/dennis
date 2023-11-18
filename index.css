@@ -246,12 +246,13 @@ body {
     padding: 8em 12em;
     max-width: 100em;
     margin: auto;
-    font-family: var(--Poppins);
-    color: var(--color-black);
 }
 
 .recentWorkTitle, .recentWorkNames {
     /* border: solid red 1px; */
+    font-family: var(--Poppins);
+    color: var(--color-black);
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
