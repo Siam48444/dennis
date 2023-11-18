@@ -102,7 +102,7 @@ body {
             height: 0.5em;
             background-color: var(--color-white);
             border-radius: 50%;
-            inset: auto 55% -1.2em 45%;
+            inset: auto 55% -1.5em 45%;
             opacity: 0;
             transform: scale(0);
             transition: opacity 300ms ease, transform 300ms ease;
