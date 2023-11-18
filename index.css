@@ -125,23 +125,21 @@ body {
     justify-content: space-between;
     position: absolute;
     top: 60%;
-    gap: 0.5em;
 }
 
 .heroNameAnimationSlide {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 0.5em;
-    animation: mainNameAnimation 10000ms linear infinite;
+    animation: mainNameAnimation 5000ms linear infinite;
 }
 
 .heroAnimatedName {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 @keyframes mainNameAnimation {
     100% {
-        transform: translateX(-100vw);
+        transform: translateX(-50%);
     }
 }
