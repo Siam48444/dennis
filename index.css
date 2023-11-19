@@ -22,7 +22,7 @@ body {
     --color-black: rgba(28, 29, 32, 1);
     --color-light-black: rgba(153, 157, 158, 0.6);
     --color-blue: rgba(69, 92, 233, 1);
-    --color-menu-box-shadow: -10em 0 100em rgba(10, 10, 10, 0.2);
+    --color-menu-box-shadow: -10em 0 110em rgba(10, 10, 10, 0.2);
 
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
@@ -127,17 +127,16 @@ body {
     color: var(--color-white);
     font-family: var(--Poppins);
     font-size: 6vw;
-    text-wrap: nowrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
     bottom: 12%;
-    overflow-x: hidden;
     animation: mainNameAnimation 20000ms linear infinite;
 }
 
 .heroNameAnimationSlide {
+    text-wrap: nowrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -236,7 +235,7 @@ body {
 }
 
 .detailsSection {
-    max-width: 100em;
+    max-width: 110em;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -244,6 +243,9 @@ body {
     gap: 3em;
     padding: 8em 10em;
     font-family: var(--Poppins);
+    transform: translateY(5em);
+    opacity: 0;
+    transition: transform 200ms ease, opacity 300ms ease;
 
     & h5 {
         color: var(--color-black);
@@ -264,7 +266,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 8em 10em;
-    max-width: 100em;
+    max-width: 110em;
     margin: auto;
     position: relative;
 }
