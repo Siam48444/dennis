@@ -20,7 +20,7 @@ body {
     --color-hero-background: rgba(153,157,158, 1);
     --color-white: rgba(255, 255, 255, 1);
     --color-black: rgba(28, 29, 32, 1);
-    --color-light-black: rgba(153, 157, 158, 0.4);
+    --color-light-black: rgba(153, 157, 158, 0.6);
     --color-blue: rgba(69, 92, 233, 1);
     --color-menu-box-shadow: -10em 0 100em rgba(10, 10, 10, 0.2);
 
@@ -354,7 +354,7 @@ body {
     transform: translateX(100%);
 }
 
-.menuSectionOpened {   /* This is for Javascript 'classList.toggle' */
+.menuSectionOpened {   /* This is for Javascript 'classList' */
     opacity: 1;
     transform: translateX(0);
 }
@@ -466,10 +466,15 @@ body {
 
 }
 
-.hamburgerMenuButtonAppeared {   /* This is for Javascript 'classList.toggle' */
+.hamburgerMenuButtonAppeared {   /* This is for Javascript 'classList' */
     transform: scale(1);
     opacity: 1;
     pointer-events: all;
+}
+
+.scrollAppeared {   /* This is for Javascript 'classList' */
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hamburgerButtonLines {
@@ -498,7 +503,7 @@ body {
 }
 
 
-.hoveredOnWork {   /* This is for Javascript 'classList.toggle' */
+.hoveredOnWork {   /* This is for Javascript 'classList' */
     opacity: 1;
     transform: scale(1);
 }
