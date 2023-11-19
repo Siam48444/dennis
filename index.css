@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-   overflow-x: hidden; 
+    overflow: hidden scroll; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -248,9 +249,10 @@ body {
     padding: 8em 10em;
     max-width: 100em;
     margin: auto;
+    position: relative;
 }
 
-.recentWorkTitle, .recentWorkNames {
+.recentWorkArea {
     font-family: var(--Poppins);
     color: var(--color-black);
     text-decoration: none;
@@ -261,11 +263,8 @@ body {
     padding: 3em;
     position: relative;
     border-bottom: 0.0625em solid var(--color-light-black);
-}
-
-.recentWorkNames {
     transition: padding-inline 300ms ease-in-out, color 300ms ease-in-out;
-
+    
     &:hover {
         padding-inline: 1em;
         color: var(--color-hero-background);
@@ -340,7 +339,7 @@ body {
     height: 100vh;
     width: 30em;
     background-color: var(--color-black);
-    padding: 6em;
+    padding: 5em;
     color: var(--color-white);
     font-family: var(--Poppins);
     display: flex;
@@ -348,6 +347,7 @@ body {
     align-items: baseline;
     justify-content: space-between;
     box-shadow: var(--color-menu-box-shadow);
+    overflow: hidden scroll;
     transition: 300ms ease-in-out;
     transition-property: transform, opacity, border-radius;
     opacity: 0;
@@ -372,20 +372,11 @@ body {
     }
 }
 
-.navBorderBottom {
-    background-color: var(--color-white);
-    width: 150%;
-    height: 0.00625em;
-    opacity: 0.2;
-    margin-bottom: 3em;
-}
-
 .navigations ul {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
-    gap: 0.1em;
 
     & li {
         list-style: none;
@@ -428,7 +419,7 @@ body {
     gap: 1.5em;
 
     & a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         font-weight: 400;
         color: var(--color-white);
         text-decoration: none;
@@ -445,7 +436,7 @@ body {
             transform-origin: center;
             transition: transform 300ms ease-in-out;
         }
-
+        
         &:hover::after {
             transform: scale(1);
         }
@@ -464,13 +455,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 5;
     gap: 0.3em;
     cursor: pointer;
     transform: scale(0);
     opacity: 0;
     pointer-events: none;
     transition: 300ms ease-in-out;
-    transition-property: transform, opacity;
+    transition-property: transform, opacity, background-color;
 
 }
 
@@ -485,4 +477,62 @@ body {
     height: 0.1em;
     background-color: var(--color-white);
     border-radius: 99em;
+}
+
+.cursorHoverWorkImage {
+    width: 20em;
+    height: 20em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 5;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease-in-out;
+    transition-property: transform, opacity;
+    opacity: 0;
+    position: absolute;
+    transform: scale(0);
+}
+
+
+.hoveredOnWork {   /* This is for Javascript 'classList.toggle' */
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fabricImage {
+    background-image: url(Images/Thumbnail-Fabric.jpg);
+}
+
+.aanstekelijkImage {
+    background-image: url(Images/Thumbnail-Aanstekelijk.jpg);
+}
+
+.basecreateImage {
+    background-image: url(Images/Thumbnail-Base-Create.jpg);
+}
+
+.avvrImage {
+    background-image: url(Images/Thumbnail-Avvr.jpg);
+}
+
+.viewSiteInformation {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: var(--color-blue);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    & p {
+        color: var(--color-white);
+        font-family: var(--Poppins);
+        font-weight: 500;
+        font-size: 1rem;
+    }
 }
