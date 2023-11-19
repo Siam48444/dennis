@@ -264,11 +264,11 @@ body {
     position: relative;
     border-bottom: 0.0625em solid var(--color-light-black);
     transition: padding-inline 300ms ease-in-out, color 300ms ease-in-out;
-    
-    &:hover {
-        padding-inline: 1em;
-        color: var(--color-hero-background);
-    }
+}
+
+.recentWorkNames:hover {
+    padding-inline: 1em;
+    color: var(--color-hero-background);
 }
 
 .recentWorkTitle p {
