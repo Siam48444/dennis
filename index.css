@@ -133,24 +133,24 @@ body {
     position: absolute;
     bottom: 12%;
     overflow-x: hidden;
+    animation: mainNameAnimation 20000ms linear infinite;
 }
 
 .heroNameAnimationSlide {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    animation: mainNameAnimation 10000ms linear infinite;
-}
-
-.heroAnimatedName {
-    font-weight: 400;
-    user-select: none;
 }
 
 @keyframes mainNameAnimation {
     100% {
         transform: translateX(-50%);
     }
+}
+
+.heroAnimatedName {
+    font-weight: 400;
+    user-select: none;
 }
 
 .freelanceInto {
@@ -251,7 +251,6 @@ body {
 }
 
 .recentWorkTitle, .recentWorkNames {
-    /* border: solid red 1px; */
     font-family: var(--Poppins);
     color: var(--color-black);
     text-decoration: none;
@@ -349,8 +348,15 @@ body {
     align-items: baseline;
     justify-content: space-between;
     box-shadow: var(--color-menu-box-shadow);
+    transition: 300ms ease-in-out;
+    transition-property: transform, opacity, border-radius;
     opacity: 0;
     transform: translateX(100%);
+}
+
+.menuSectionOpened {   /* This is for Javascript 'classList.toggle' */
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .navigations, .socials {
@@ -460,7 +466,18 @@ body {
     align-items: center;
     gap: 0.3em;
     cursor: pointer;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: 300ms ease-in-out;
+    transition-property: transform, opacity;
 
+}
+
+.hamburgerMenuButtonAppeared {   /* This is for Javascript 'classList.toggle' */
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
 }
 
 .hamburgerButtonLines {
