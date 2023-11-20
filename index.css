@@ -328,11 +328,12 @@ body {
 }
 
 .hoverBlue {
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out, outline 300ms ease-in-out;
 
     &:hover {
         background-color: var(--color-blue);
         color: var(--color-white);
+        outline: none;
     }
 }
 
@@ -566,10 +567,78 @@ body {
 }
 
 footer {
+    overflow: hidden;
     height: 100vh;
     max-width: 200em;
     background-color: var(--color-black);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    margin: auto;
+    font-family: var(--Poppins);
+}
+
+.profileContainer {
+    position: relative;
+    width: 70%;
+    height: max-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4em;
+}
+
+.topSection {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: baseline;
+    color: var(--color-white);
+    padding-bottom: 3em;
+    /* border: solid red 1px; */
+    width: 100%;
+    border-bottom: solid var(--color-light-black) 0.005em;
+
+    & .divOne {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    }
+
+    & h1 {
+        font-weight: 400;
+        font-size: 4.5rem;
+    }
+
+    & .DP {
+        background-image: url(Images/Dennis-Cut.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 5em;
+        width: 5em;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+}
+
+.contactButtons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5em;
+    font-size: 1rem;
+    
+    & a {
+        outline: solid var(--color-light-black) 0.005em;
+        color: var(--color-white);
+        text-decoration: none;
+        padding: 1em 1.5em;
+        border-radius: 99em;
+    }
+}
+
+.getInTouch {
+    position: absolute;
+    right: 0;
 }
