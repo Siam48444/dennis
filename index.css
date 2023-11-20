@@ -673,7 +673,6 @@ footer {
 }
 
 .bottomInfosContainer {
-    border: solid red 1px;
     display: flex;
     height: max-content;
     align-items: center;
