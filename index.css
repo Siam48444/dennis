@@ -30,7 +30,7 @@ body {
 }
 
 .heroSection {
-    max-width: 200em;
+    width: 100vw;
     height: 110vh;
     margin: auto;
     background-image: url(Images/Dennis.jpg);
@@ -236,7 +236,7 @@ body {
 }
 
 .detailsSection {
-    max-width: 200em;
+    width: 100vw;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -267,7 +267,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 8em 10em;
-    max-width: 200em;
+    width: 100vw;
     margin: auto;
     position: relative;
 }
@@ -329,12 +329,13 @@ body {
 }
 
 .hoverBlue {
-    transition: background-color 300ms ease-in-out, color 300ms ease-in-out, outline 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+    transition-property: background-color, color, border;;
 
     &:hover {
         background-color: var(--color-blue);
         color: var(--color-white);
-        outline: none;
+        border: solid 0.005em var(--color-blue);
     }
 }
 
@@ -570,7 +571,7 @@ body {
 footer {
     overflow: hidden;
     height: 60em;
-    max-width: 200em;
+    width: 100vw;
     background-color: var(--color-black);
     display: flex;
     flex-direction: column;
@@ -630,7 +631,7 @@ footer {
     font-size: 1rem;
     
     & a {
-        outline: solid var(--color-light-black) 0.005em;
+        border: solid var(--color-light-black) 0.005em;
         color: var(--color-white);
         text-decoration: none;
         padding: 1em 1.5em;
