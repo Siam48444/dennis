@@ -464,6 +464,7 @@ body {
 
 .hamburgerMenuButton {
     background-color: var(--color-black);
+    border: var(--color-light-black) solid 0.003em;
     border-radius: 50%;
     width: 5em;
     height: 5em;
@@ -564,42 +565,11 @@ body {
     }
 }
 
-.imageContainer {
+footer {
+    height: 100vh;
+    max-width: 200em;
+    background-color: var(--color-black);
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 4em;
-}
-
-.img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 25em;
-    height: 15em;
-}
-
-.imgOne {
-    background-image: url(Images/Web\ 1.jpg);
-}
-
-.imgTwo {
-    background-image: url(Images/Web\ 2.jpg);
-}
-
-.imgFour {
-    background-image: url(Images/Web\ 4.jpg);
-}
-
-.imgFive {
-    background-image: url(Images/Web\ 5.png);
-}
-
-.imgSix {
-    background-image: url(Images/Web\ 6.png);
-}
-
-.imgSeven {
-    background-image: url(Images/Web\ 7.png);
+    flex-direction: column;
+    gap: 1em;
 }
