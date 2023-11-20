@@ -22,6 +22,7 @@ body {
     --color-black: rgba(28, 29, 32, 1);
     --color-light-black: rgba(153, 157, 158, 0.6);
     --color-blue: rgba(69, 92, 233, 1);
+    --color-blue-dark: rgba(51, 75, 211, 1);
     --color-menu-box-shadow: -10em 0 90em rgba(10, 10, 10, 0.2);
 
     /* Font Family*/
@@ -578,7 +579,6 @@ footer {
 }
 
 .profileContainer {
-    position: relative;
     width: 70%;
     height: max-content;
     margin: auto;
@@ -590,6 +590,7 @@ footer {
 }
 
 .topSection {
+    position: relative;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -618,8 +619,8 @@ footer {
         width: 5em;
         border-radius: 50%;
         margin-right: 0.5em;
+        border: solid red 1px;
     }
-    /* border: solid red 1px; */
 }
 
 .contactButtons {
@@ -640,7 +641,8 @@ footer {
 
 .getInTouch {
     position: absolute;
-    inset: 47% 5em 52% auto;
+    right: 5em;
+    bottom: -29%;
     color: var(--color-white);
     text-decoration: none;
     width: 10em;
@@ -651,4 +653,18 @@ footer {
     cursor: pointer;
     background-color: var(--color-blue);
     border-radius: 50%;
+}
+
+.arrowFooterSvg {
+    display: none;
+}
+
+.hoverDarkBlue {
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out, outline 300ms ease-in-out;
+
+    &:hover {
+        background-color: var(--color-blue-dark);
+        color: var(--color-white);
+        outline: none;
+    }
 }
