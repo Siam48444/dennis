@@ -568,7 +568,7 @@ body {
 
 footer {
     overflow: hidden;
-    height: 100vh;
+    height: 60em;
     max-width: 200em;
     background-color: var(--color-black);
     display: flex;
@@ -596,7 +596,6 @@ footer {
     justify-content: baseline;
     color: var(--color-white);
     padding-bottom: 3em;
-    /* border: solid red 1px; */
     width: 100%;
     border-bottom: solid var(--color-light-black) 0.005em;
 
@@ -605,12 +604,12 @@ footer {
         gap: 1em;
         align-items: center;
     }
-
+    
     & h1 {
         font-weight: 400;
         font-size: 4.5rem;
     }
-
+    
     & .DP {
         background-image: url(Images/Dennis-Cut.jpg);
         background-position: center;
@@ -620,6 +619,7 @@ footer {
         border-radius: 50%;
         margin-right: 0.5em;
     }
+    /* border: solid red 1px; */
 }
 
 .contactButtons {
@@ -640,5 +640,15 @@ footer {
 
 .getInTouch {
     position: absolute;
-    right: 0;
+    inset: 47% 5em 52% auto;
+    color: var(--color-white);
+    text-decoration: none;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--color-blue);
+    border-radius: 50%;
 }
