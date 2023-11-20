@@ -22,14 +22,14 @@ body {
     --color-black: rgba(28, 29, 32, 1);
     --color-light-black: rgba(153, 157, 158, 0.6);
     --color-blue: rgba(69, 92, 233, 1);
-    --color-menu-box-shadow: -10em 0 110em rgba(10, 10, 10, 0.2);
+    --color-menu-box-shadow: -10em 0 90em rgba(10, 10, 10, 0.2);
 
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
 }
 
 .heroSection {
-    width: 100vw;
+    max-width: 200em;
     height: 110vh;
     margin: auto;
     background-image: url(Images/Dennis.jpg);
@@ -235,7 +235,7 @@ body {
 }
 
 .detailsSection {
-    max-width: 110em;
+    max-width: 200em;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -245,7 +245,7 @@ body {
     font-family: var(--Poppins);
     transform: translateY(5em);
     opacity: 0;
-    transition: transform 200ms ease, opacity 300ms ease;
+    transition: transform 400ms ease, opacity 500ms ease;
 
     & h5 {
         color: var(--color-black);
@@ -266,7 +266,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 8em 10em;
-    max-width: 110em;
+    max-width: 200em;
     margin: auto;
     position: relative;
 }
@@ -482,7 +482,10 @@ body {
     pointer-events: none;
     transition: 300ms ease-in-out;
     transition-property: transform, opacity, background-color;
+}
 
+.hamburgerMenuButtonClickd {    /* This is for Javascript 'classList' */
+    background-color: var(--color-blue);
 }
 
 .hamburgerMenuButtonAppeared {   /* This is for Javascript 'classList' */
@@ -559,4 +562,44 @@ body {
         font-weight: 500;
         font-size: 1rem;
     }
+}
+
+.imageContainer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4em;
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25em;
+    height: 15em;
+}
+
+.imgOne {
+    background-image: url(Images/Web\ 1.jpg);
+}
+
+.imgTwo {
+    background-image: url(Images/Web\ 2.jpg);
+}
+
+.imgFour {
+    background-image: url(Images/Web\ 4.jpg);
+}
+
+.imgFive {
+    background-image: url(Images/Web\ 5.png);
+}
+
+.imgSix {
+    background-image: url(Images/Web\ 6.png);
+}
+
+.imgSeven {
+    background-image: url(Images/Web\ 7.png);
 }
