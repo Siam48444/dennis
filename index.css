@@ -41,6 +41,13 @@ body {
     position: relative;
 }
 
+
+@keyframes parallaxY {
+    100% {
+        transform: translateY(calc(var(--parallax-speed) * 10em)); 
+    }
+}
+
 .heroHeader {
     display: flex;
     justify-content: space-between;
