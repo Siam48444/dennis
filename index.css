@@ -656,7 +656,11 @@ footer {
 }
 
 .arrowFooterSvg {
-    display: none;
+    position: absolute;
+    fill: var(--color-white);
+    width: 2em;
+    transform: rotate(-45deg);
+    inset: 5em 0 auto auto;
 }
 
 .hoverDarkBlue {
