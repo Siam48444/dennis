@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow: hidden scroll; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: var(--color-black);
+}
+
+:root {
+    /* Colors */
+    --color-hero-background: rgba(153,157,158, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(28, 29, 32, 1);
+    --color-light-black: rgba(153, 157, 158, 0.6);
+    --color-blue: rgba(69, 92, 233, 1);
+    --color-blue-dark: rgba(51, 75, 211, 1);
+    --color-menu-box-shadow: -10em 0 90em rgba(10, 10, 10, 0.2);
+    
+    /* Font Family*/
+    --Poppins: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+}
+
+.headerLeftSide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-family: var(--Poppins);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+    & p { 
+        color: var(--color-white);
+        text-decoration-line: none;
+        text-wrap: nowrap;
+    }
+
+    &:hover .codeByDennis {
+        transform: translateX(-44%);
+    }
+
+    &:hover .codeByDennisContainer {
+        width: 10em;
+    }
+
+    &:hover .copyrightSign {
+        transform: rotate(360deg);
+    }
+}
+
+.copyrightSign {
+    transition: transform 300ms ease-in-out;
+}
+
+.codeByDennisContainer {
+    width: 8.1em;
+    overflow: hidden;
+    transition: width 300ms ease-in-out;
+}
+
+.codeByDennis {
+    transition: transform 300ms ease-in-out;
+}
+
+.headerRightSide ul {
+    display: flex;
+    list-style: none;
+    font-family: var(--Poppins);
+    font-size: 1rem;
+    font-weight: 500;
+    gap: 3em;
+
+    & a {
+        color: var(--color-white);
+        text-decoration-line: none;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0.5em;
+            height: 0.5em;
+            background-color: var(--color-white);
+            border-radius: 50%;
+            inset: auto 55% -1.5em 45%;
+            opacity: 0;
+            transform: scale(0);
+            transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
