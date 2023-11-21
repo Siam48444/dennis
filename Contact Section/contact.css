@@ -139,12 +139,50 @@ main {
 
 .inputs {
     border-bottom: var(--color-light-black) 0.005em solid;
+    border: red 0.005em solid;
+    padding: 2em 3em;
 
     &:last-child {
         padding-bottom: 4em;
     }
+
+    & h5 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            text-align: center;
+            font-size: 0.8rem;
+            left: -3.5em;
+            opacity: 0.5;
+        }
+    }
 }
 
+.input_title_one::before {
+    content: "01";
+} 
+
+.input_title_two::before {
+    content: "02";
+} 
+
+.input_title_three::before {
+    content: "03";
+} 
+
+.input_title_four::before {
+    content: "04";
+} 
+
+.input_title_five::before {
+    content: "05";
+} 
 
 footer {
     display: flex;
