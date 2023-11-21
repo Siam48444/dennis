@@ -24,14 +24,14 @@ body {
     --color-blue: rgba(69, 92, 233, 1);
     --color-blue-dark: rgba(51, 75, 211, 1);
     --color-menu-box-shadow: -10em 0 90em rgba(10, 10, 10, 0.2);
-
+    
     /* Font Family*/
     --Poppins: "poppins", Arial, Helvetica, sans-serif;
 }
 
 .heroSection {
     width: 100vw;
-    height: 110vh;
+    height: 105vh;
     margin: auto;
     background-image: url(Images/Dennis.jpg);
     background-repeat: no-repeat;
@@ -39,10 +39,21 @@ body {
     background-size: contain;
     background-color: var(--color-hero-background);
     position: relative;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: var(--color-white);
+        height: 50em;
+        width: 100%;
+        bottom: -50em;
+        animation: parallaxHeroAixisY linear;
+        animation-timeline: scroll();
+        --parallax-speed: -3;
+    }
 }
 
-
-@keyframes parallaxY {
+@keyframes parallaxHeroAixisY {
     100% {
         transform: translateY(calc(var(--parallax-speed) * 10em)); 
     }
@@ -132,33 +143,33 @@ body {
 }
 
 .heroMainName {
-    color: var(--color-white);
-    font-family: var(--Poppins);
-    font-size: 6vw;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
-    bottom: 12%;
-    animation: mainNameAnimation 20000ms linear infinite;
-}
-
-.heroNameAnimationSlide {
-    text-wrap: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@keyframes mainNameAnimation {
-    100% {
-        transform: translateX(-50%);
+    overflow: hidden;
+    opacity: 0.8;
+    bottom: 8%;
+    animation: parallaxBigName linear;
+    animation-timeline: scroll();
+    --parallax-speed: 1.1;
+    
+    & h1 {  
+        text-wrap: nowrap;
+        font-family: var(--Poppins);
+        font-size: 10vw;
+        color: var(--color-white);
+        font-weight: 400;
+        user-select: none;
     }
 }
 
-.heroAnimatedName {
-    font-weight: 400;
-    user-select: none;
+@keyframes parallaxBigName {
+    100% {
+        transform: translateY(calc(var(--parallax-speed) * 10em)); 
+        opacity: 0;
+    }
 }
 
 .freelanceInto {
@@ -326,6 +337,7 @@ body {
     width: 10em;
     height: 10em;
     border-radius: 50%;
+    border: solid 0.005em var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,7 +349,7 @@ body {
 
 .hoverBlue {
     transition: 300ms ease-in-out;
-    transition-property: background-color, color, border;;
+    transition-property: background-color, color, border;
 
     &:hover {
         background-color: var(--color-blue);
@@ -576,9 +588,9 @@ body {
 }
 
 footer {
-    overflow: hidden;
-    height: 60em;
+    overflow: hidden;   
     width: 100vw;
+    height: 100vh;
     background-color: var(--color-black);
     display: flex;
     flex-direction: column;
@@ -604,9 +616,8 @@ footer {
     flex-direction: column;
     justify-content: baseline;
     color: var(--color-white);
-    padding-bottom: 6em;
+    padding-bottom: 3em;
     width: 100%;
-    height: 50%;
     border-bottom: solid var(--color-light-black) 0.005em;
     
     & .divOne {
@@ -633,7 +644,7 @@ footer {
 
 .contactButtons {
     display: flex;
-    align-items: first baseline;
+    align-items: last baseline;
     justify-content: left;
     width: 100%;
     height: 50%;
@@ -651,8 +662,8 @@ footer {
 
 .getInTouch {
     position: absolute;
-    right: 5em;
-    transform: translateY(85%);
+    right: 3em;
+    top: 69%;
     color: var(--color-white);
     text-decoration: none;
     width: 10em;
@@ -670,7 +681,7 @@ footer {
     fill: var(--color-white);
     width: 2em;
     transform: rotate(-45deg);
-    inset: 5em 0 auto auto;
+    inset: 8em 0 auto auto;
 }
 
 .hoverDarkBlue {
