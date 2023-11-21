@@ -121,6 +121,7 @@ main {
     gap: 2em;
     font-family: var(--Poppins);
     color: var(--color-white);
+    overflow: hidden;
 }
 
 .left_column {
@@ -139,11 +140,10 @@ main {
 
 .inputs {
     border-bottom: var(--color-light-black) 0.005em solid;
-    border: red 0.005em solid;
-    padding: 2em;
+    padding: 2em 2em 0 3em;
 
     &:last-child {
-        padding-bottom: 4em;
+        padding-bottom: 10em;
     }
 
     & h5 {
@@ -157,9 +157,20 @@ main {
         &::before {
             position: absolute;
             text-align: center;
-            font-size: 0.8rem;
-            left: -2.5em;
+            font-size: 1rem;
+            left: -3em;
             opacity: 0.5;
+        }
+    }
+
+    & input {
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 2em 2em 3em 0;
+
+        &::placeholder {
+            font-size: 1.4rem;
         }
     }
 }
