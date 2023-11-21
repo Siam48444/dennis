@@ -120,9 +120,31 @@ main {
     padding: 10em;
     gap: 2em;
     font-family: var(--Poppins);
-    border: red solid 1px;
     color: var(--color-white);
 }
+
+.left_column {
+    height: max-content;
+    width: 65%;
+    
+    /* border: red solid 1px; */
+    & h1 {
+        font-size: 4.5rem;
+        font-weight: 400;
+        line-height: 100%;
+        border-bottom: var(--color-light-black) 0.005em solid;
+        padding-bottom: 3em;
+    }
+}
+
+.inputs {
+    border-bottom: var(--color-light-black) 0.005em solid;
+
+    &:last-child {
+        padding-bottom: 4em;
+    }
+}
+
 
 footer {
     display: flex;
