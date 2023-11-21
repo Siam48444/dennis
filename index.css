@@ -484,7 +484,7 @@ body {
     }
 }
 
-.hamburgerMenuButton {
+/* .hamburgerMenuButton {
     background-color: var(--color-black);
     border: var(--color-light-black) solid 0.003em;
     border-radius: 50%;
@@ -507,19 +507,19 @@ body {
     transition-property: transform, opacity;
 }
 
-.hamburgerMenuButtonClickd {    /* This is for Javascript 'classList' */
+.hamburgerMenuButtonClickd {    
     background-color: var(--color-blue);
 }
 
-.hamburgerMenuButtonAppeared {   /* This is for Javascript 'classList' */
+.hamburgerMenuButtonAppeared {   
     transform: scale(1);
     opacity: 1;
     pointer-events: all;
 }
 
-.hamburgerButtonLinesClicked {   /* This is for Javascript 'classList' */
+.hamburgerButtonLinesClicked {   
     position: absolute;
-}
+} */
 
 .scrollAppeared {   /* This is for Javascript 'classList' */
     opacity: 1;
