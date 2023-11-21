@@ -19,7 +19,7 @@ window.addEventListener("scroll", HamburgerButtonAppears);
 function AppearInScroll() {
     const detailsSection = document.querySelector(".detailsSection");
     const detailsSectionPosition = detailsSection.getBoundingClientRect().top;
-    const windowPosition = window.innerHeight / 2.1;
+    const windowPosition = window.innerHeight / 1.5;
 
     if(detailsSectionPosition < windowPosition) {
         detailsSection.classList.add("scrollAppeared");
