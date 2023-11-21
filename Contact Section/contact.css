@@ -52,15 +52,15 @@ body {
         text-decoration-line: none;
         text-wrap: nowrap;
     }
-
+    
     &:hover .codeByDennis {
         transform: translateX(-44%);
     }
-
+    
     &:hover .codeByDennisContainer {
         width: 10em;
     }
-
+    
     &:hover .copyrightSign {
         transform: rotate(360deg);
     }
@@ -87,12 +87,12 @@ body {
     font-size: 1rem;
     font-weight: 500;
     gap: 3em;
-
+    
     & a {
         color: var(--color-white);
         text-decoration-line: none;
         position: relative;
-
+        
         &::after {
             content: "";
             position: absolute;
@@ -105,7 +105,7 @@ body {
             transform: scale(0);
             transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
         }
-
+        
         &:hover::after {
             opacity: 1;
             transform: scale(1);
@@ -113,8 +113,16 @@ body {
     }
 }
 
-
-
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10em;
+    gap: 2em;
+    font-family: var(--Poppins);
+    border: red solid 1px;
+    color: var(--color-white);
+}
 
 footer {
     display: flex;
@@ -123,14 +131,14 @@ footer {
     justify-content: space-between;
     padding: 2em 4em;
     font-family: var(--Poppins);
-
+    
     & .versionFooter {
         display: flex;
         flex-direction: column;
         justify-content: baseline;
         align-items: left;
         gap: 0.5em;
-
+        
         & p {
             font-size: 0.7rem;
             font-weight: 400;
