@@ -141,6 +141,9 @@ main {
 .inputs {
     border-bottom: var(--color-light-black) 0.005em solid;
     padding: 2em 2em 0 3em;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-white);
 
     & h5 {
         font-size: 1.4rem;
