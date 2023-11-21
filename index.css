@@ -503,6 +503,8 @@ body {
     transform: scale(0);
     opacity: 0;
     pointer-events: none;
+    transition: 300ms ease-in-out;
+    transition-property: transform, opacity;
 }
 
 .hamburgerMenuButtonClickd {    /* This is for Javascript 'classList' */
