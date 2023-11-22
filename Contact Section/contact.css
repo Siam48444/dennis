@@ -117,7 +117,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 10em;
+    padding: 8em;
     gap: 2em;
     font-family: var(--Poppins);
     color: var(--color-white);
@@ -266,6 +266,36 @@ footer {
 
         &:hover::after {
             transform: scale(1);
+        }
+    }
+}
+
+.right_column {
+    height: max-content;
+    
+    .DP_area {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        border: red solid 1px;
+        gap: 5em;
+
+        & .DP {
+            width: 6em;
+            height: 6em;
+            border-radius: 50%;
+            background-image: url(../Images/Dennis-Cut.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        & .DP_arrow_svg {
+            fill: var(--color-white);
+            width: 2em;
+            height: 2em;
+            transform: rotate(-135deg);
         }
     }
 }
