@@ -351,23 +351,3 @@ footer {
         }
       }  
 }
-
-.home_indicator {
-    position: absolute;
-    background-color: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3em;
-    height: 2em;
-    margin: 5em; /*delete */
-    padding: 0.5em 2em;
-    border-radius: 0.2em;
-    font-family: var(--Poppins);
-
-    & p {
-        color: var(--color-black);
-        font-size: 0.8rem;
-        font-weight: 500;
-    }
-}
