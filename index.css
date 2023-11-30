@@ -395,7 +395,7 @@ body {
     transform: translateX(100%);
 }
 
-.menuSectionOpened {   /* This is for Javascript 'classList' */
+.menuSectionOpened {   /* Javascript 'classList */
     opacity: 1;
     transform: translateX(0);
 }
@@ -482,6 +482,18 @@ body {
             transform: scale(1);
         }
     }
+}
+
+.scrollAppeared {   /* Javascript 'classList */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hamburgerButtonLines {
+    width: 30%;
+    height: 0.1em;
+    background-color: var(--color-white);
+    border-radius: 99em;
 }
 
 .cursorHoverWorkImage {
