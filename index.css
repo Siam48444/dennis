@@ -374,32 +374,6 @@ body {
     }
 }
 
-.menuSection {
-    position: fixed;
-    inset: 0 0 0 auto;
-    height: 100vh;
-    width: 30em;
-    background-color: var(--color-black);
-    padding: 5em;
-    color: var(--color-white);
-    font-family: var(--Poppins);
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-between;
-    box-shadow: var(--color-menu-box-shadow);
-    overflow: hidden scroll;
-    transition: 300ms ease-in-out;
-    transition-property: transform, opacity, border-radius;
-    opacity: 0;
-    transform: translateX(100%);
-}
-
-.menuSectionOpened {   /* Javascript 'classList */
-    opacity: 1;
-    transform: translateX(0);
-}
-
 .navigations, .socials {
     display: flex;
     flex-direction: column;
