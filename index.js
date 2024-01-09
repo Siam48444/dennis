@@ -9,6 +9,7 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
+// hero section parallax animation.
 gsap.to("main img", {
    y: "15%",
    scrollTrigger: {
