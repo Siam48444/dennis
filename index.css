@@ -42,11 +42,17 @@ main {
    position: relative;
    height: 100vh;
    height: 100svh;
-   background-image: url("Image/Dennis1.jpg");
-   background-repeat: no-repeat;
-   background-position: top;
-   background-size: contain;
    background-color: var(--Gray);
+   user-select: none;
+}
+
+main img {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 100%;
+   pointer-events: none;
+   object-fit: cover;
 }
 
 nav {
@@ -56,11 +62,13 @@ nav {
    align-items: center;
    justify-content: space-between;
    padding: 2em;
+   z-index: 2;
 }
 
 nav * {
    font-family: var(--Neue_Montreal_Regular);
    color: var(--White);
+   font-size: clamp(0.9rem, 1.5vw, 1rem);
 }
 
 .DENNIS {
@@ -68,13 +76,36 @@ nav * {
    align-items: center;
    justify-content: center;
    gap: 0.1em;
+   overflow: hidden;
 }
 
 nav ul {
    display: flex;
    align-items: center;
    justify-content: center;
-   gap: 3em;
+   gap: clamp(1.5em, 4vw, 3em);
+}
+
+.nav_links {
+   position: relative;
+}
+
+.nav_links::after {
+   position: absolute;
+   content: "";
+   background-color: var(--White);
+   width: 0.5em;
+   height: 0.5em;
+   border-radius: 50%;
+   left: 50%;
+   bottom: -150%;
+   transform: translateX(-50%) scale(0);
+   transition: 200ms ease-in-out;
+   transition-property: transform;
+}
+
+.nav_links:hover::after {
+   transform: translateX(-50%) scale(1);
 }
 
 .spacer {
