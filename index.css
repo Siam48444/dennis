@@ -126,6 +126,27 @@ nav ul {
    transform: translateY(-50%);
 }
 
+#area2 {
+   padding: 10em;
+   position: relative;
+   display: grid;
+   grid-template-columns: 70% 30%;
+   gap: 2em;
+}
+
+.area2_left p {
+   display: inline;
+   font-family: var(--Neue_Montreal_Regular);
+   color: var(--Black);
+   font-size: 2rem;
+}
+
+.area2_right p {
+   font-family: var(--Neue_Montreal_Regular);
+   color: var(--Black);
+   font-size: 0.9rem;
+}
+
 .spacer {
    height: 100vh;
 }
