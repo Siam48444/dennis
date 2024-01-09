@@ -134,8 +134,12 @@ nav ul {
    gap: 2em;
 }
 
+.area2_left div {
+   display: inline-block;
+   overflow: hidden;
+}
+
 .area2_left p {
-   display: inline;
    font-family: var(--Neue_Montreal_Regular);
    color: var(--Black);
    font-size: 2rem;
@@ -144,7 +148,8 @@ nav ul {
 .area2_right p {
    font-family: var(--Neue_Montreal_Regular);
    color: var(--Black);
-   font-size: 0.9rem;
+   font-size: 1rem;
+   line-height: 1.5;
 }
 
 .spacer {
