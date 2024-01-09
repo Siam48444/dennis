@@ -44,6 +44,7 @@ main {
    height: 100svh;
    background-color: var(--Gray) !important;
    user-select: none;
+   overflow: hidden;
 }
 
 main img {
